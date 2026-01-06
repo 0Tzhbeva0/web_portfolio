@@ -1,0 +1,142 @@
+:root {
+  --text: #1f2937;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --bg: #ffffff;
+  --link: #1d4ed8;
+  --link-hover: #1e40af;
+}
+
+* { box-sizing: border-box; }
+
+html { color-scheme: light; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.65;
+}
+
+.container {
+  max-width: 920px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 8px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 8px 12px;
+}
+
+.skip-link:focus {
+  left: 16px;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  padding: 18px 0;
+}
+
+.header-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.site-title a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.site-nav nav ul {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--muted);
+}
+
+.site-nav a:hover {
+  color: var(--text);
+}
+
+.site-nav a.active {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.site-main {
+  padding: 28px 0 48px;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 24px 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+a {
+  color: var(--link);
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+.prose h1 {
+  font-size: 36px;
+  line-height: 1.15;
+  margin: 0 0 16px;
+}
+
+.prose h2 {
+  font-size: 22px;
+  margin: 28px 0 12px;
+}
+
+.prose h3 {
+  font-size: 18px;
+  margin: 22px 0 10px;
+}
+
+.prose p {
+  margin: 0 0 14px;
+}
+
+.prose ul,
+.prose ol {
+  padding-left: 20px;
+  margin: 0 0 14px;
+}
+
+.prose blockquote {
+  margin: 16px 0;
+  padding: 8px 14px;
+  border-left: 3px solid var(--border);
+  color: var(--muted);
+}
+
+.prose pre {
+  overflow: auto;
+  padding: 14px;
+  background: #f9fafb;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}

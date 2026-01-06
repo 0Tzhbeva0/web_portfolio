@@ -1,0 +1,5 @@
+<p>
+	© {{ now.Year }} {{ site.Title }} ·
+	<a href="{{ site.Home.RelPermalink }}">Главная</a>
+	{{ with index site.Menus "main" }}· <a href="{{ (index . 0).URL | relURL }}">Портфолио</a>{{ end }}
+</p>

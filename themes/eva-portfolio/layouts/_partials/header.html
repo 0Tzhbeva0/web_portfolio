@@ -1,0 +1,8 @@
+<div class="header-row">
+	<div class="site-title">
+		<a href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a>
+	</div>
+	<div class="site-nav">
+		{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+	</div>
+</div>

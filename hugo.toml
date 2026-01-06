@@ -1,3 +1,16 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://0tzhbeva0.github.io/web_portfolio/'
+languageCode = 'ru'
+title = 'Портфолио — Ева Тажибаева'
+theme = 'eva-portfolio'
+
+# Для ручной публикации через GitHub Pages (Source: main /docs)
+publishDir = 'docs'
+
+[params]
+description = 'Портфолио Евы Тажибаевой — студентки ИТМО (КТвД).'
+
+[menus]
+[[menus.main]]
+name = 'Портфолио'
+pageRef = '/portfolio'
+weight = 10
